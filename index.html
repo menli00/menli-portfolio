@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mengli | Welcome to My World</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lora:wght@500;600&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--milk:#f6edda;--cream:#fffaf0;--coffee:#4a2c1a;--line:rgba(74,44,26,.45)}
+*{box-sizing:border-box}
+html{font-size:18px;scroll-behavior:smooth}
+body{margin:0;min-height:100vh;color:var(--coffee);font-family:'Lora','Noto Serif SC',serif;font-weight:500;font-size:1.2rem;line-height:1.8;
+background:radial-gradient(circle at 10% 6%,#fffaf0 0,transparent 42%),radial-gradient(circle at 92% 94%,#e8d2ab 0,transparent 48%),radial-gradient(circle at 88% 10%,#f2e1c3 0,transparent 26%),var(--milk);background-attachment:fixed}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:36px 40px 56px}
+.top{display:flex;flex-wrap:wrap;gap:14px 30px;align-items:center;justify-content:space-between;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.brand{font-family:'Playfair Display','Noto Serif SC',serif;font-weight:700;font-size:2rem;text-decoration:none}
+.links{display:flex;flex-wrap:wrap;gap:8px 28px;font-size:1.15rem}
+.links a{text-decoration:none;padding:2px 0;border-bottom:2px solid transparent}
+.links a:hover,.links a[aria-current]{border-color:var(--coffee)}
+.lang{display:flex;border:2px solid var(--coffee);border-radius:999px;overflow:hidden}
+.lang button{font:inherit;font-size:1.05rem;border:0;background:none;color:inherit;padding:4px 20px;cursor:pointer}
+.lang button[aria-pressed=true]{background:var(--coffee);color:var(--milk)}
+:focus-visible{outline:3px solid var(--coffee);outline-offset:3px}
+h1,h2{font-family:'Playfair Display','Noto Serif SC',serif;font-weight:700;line-height:1.25;margin:0}
+h1{font-size:3.2rem;margin-top:34px}
+h2{font-size:2rem;margin:52px 0 14px}
+.welcome{font-family:'Playfair Display','Noto Serif SC',serif;font-style:italic;font-size:1.5rem;margin:6px 0 30px}
+p{max-width:40em;margin:0 0 1.1em}
+.about-top{display:grid;grid-template-columns:340px 1fr;gap:56px;align-items:start}
+.portrait{width:100%;aspect-ratio:3/4;object-fit:cover;border:2px solid var(--coffee);border-radius:170px 170px 18px 18px;background:rgba(255,250,240,.7);cursor:zoom-in;position:sticky;top:24px}
+.with-fig{display:grid;grid-template-columns:1fr 300px;gap:40px;align-items:start}
+.with-fig img{width:100%;border-radius:12px;border:1px solid var(--line);cursor:zoom-in}
+.gallery{column-count:3;column-gap:18px;margin-top:10px}
+.gallery img{width:100%;display:block;margin:0 0 18px;border-radius:12px;border:1px solid var(--line);cursor:zoom-in;break-inside:avoid}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:24px}
+.card{border:1px solid var(--line);border-radius:16px;padding:24px;background:rgba(255,250,240,.7)}
+.card h3{font-family:'Playfair Display','Noto Serif SC',serif;font-size:1.6rem;margin:0 0 8px}
+.card p{margin:0}
+.wide{grid-column:1/-1}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:1.05rem}
+@media(max-width:860px){.about-top,.with-fig{grid-template-columns:1fr;gap:28px}.portrait{position:static;max-width:340px}.gallery{column-count:2}.wrap{padding:28px 22px 48px}h1{font-size:2.5rem}}
+#box{position:fixed;inset:0;background:rgba(40,24,14,.85);display:none;align-items:center;justify-content:center;z-index:9;padding:24px;cursor:zoom-out}
+#box.on{display:flex}
+#box img{max-width:100%;max-height:100%;border-radius:8px}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body data-title-en="Mengli | Welcome to My World" data-title-zh="Mengli | 欢迎来到我的世界">
+<div class="wrap">
+<header class="top">
+<a class="brand" href="#about">Mengli</a>
+<nav class="links"><a href="#about" data-zh="关于我">About Me</a><a href="#studies" data-zh="学习">Studies</a><a href="#projects" data-zh="项目">Projects</a></nav>
+<div class="lang"><button data-lang="en" aria-pressed="true">English</button><button data-lang="zh" aria-pressed="false">中文</button></div>
+</header>
+
+<section class="page" id="about">
+<h1 data-zh="关于我">About Me</h1>
+<p class="welcome" data-zh="欢迎来到我的世界">Welcome to My World</p>
+<div class="about-top">
+<img class="portrait" data-img="images/me" alt="Mengli">
+<div>
+<p data-zh="你好，我是 Mengli。我来自土库曼斯坦，现在在中国武汉生活和学习。">Hi, I'm Mengli. I come from Turkmenistan, and now I live and study in Wuhan, China.</p>
+<p data-zh="我就读于华中科技大学。我选择这所大学和这个专业，是因为我认为这所大学非常强，我想在一个认真对待理工科的地方学习。">I study at Huazhong University of Science and Technology. I chose this university and my major because I think it is a very strong university, and I wanted to learn in a place that takes technical subjects seriously.</p>
+<p data-zh="我的梦想是成为一名开发者。我喜欢代码、逻辑和数学，希望有一天能做出有用的东西。">My dream is to become a developer. I like code, logic and math, and I want to build useful things one day.</p>
+<p data-zh="我也喜欢画画和做设计，喜欢画图，也喜欢搭配颜色和字体，这个网页也是其中的一部分。我还时不时会烤一些好吃的点心。">I also love drawing and design. I like making pictures and playing with colors and fonts, and this website is part of that. From time to time I also bake something tasty.</p>
+</div>
+</div>
+
+<h2 data-zh="摄影、武汉和中国">Photography, Wuhan and China</h2>
+<div class="with-fig">
+<div>
+<p data-zh="拍照是我最喜欢的爱好。我喜欢寻找美丽的地方，把它们拍下来：傍晚的湖面、树林间的小路、下雨前多云的天空。">Taking photos is my favorite hobby. I like to look for beautiful places and catch them on camera: a lake in the evening, a path between trees, a cloudy sky before the rain.</p>
+<p data-zh="我非常喜欢武汉的自然风光。我最喜欢的是，这座城市里既有大自然，又有高楼大厦。我常常在东湖边散步，每一次看到的景色都有点不一样。">I really love the nature of Wuhan. What I like most is that one city has both nature and big modern buildings. I often walk around East Lake, and every time the view is a little different.</p>
+<p data-zh="我对中国文化也很感兴趣。在这里生活，我每天都能学到新东西：新的词语、新的美食、新的地方。我尽量多看看，并把它们拍下来。">I am also very interested in Chinese culture. Living here, I learn something new every day: new words, new food, new places. I try to see as much as I can and take photos of it.</p>
+<p data-zh="我还特别喜欢动物。每次遇到小动物，我都会想拍一张照片。">And I adore animals. When I meet one, I always want to take a photo.</p>
+</div>
+<img data-img="images/picture-15" alt="Street food">
+</div>
+
+<h2 data-zh="自然">Nature</h2>
+<div class="gallery" data-pics="3,4,7,9,10,13"></div>
+<h2 data-zh="动物">Animals</h2>
+<div class="gallery" data-pics="6,8,16"></div>
+</section>
+
+<section class="page" id="studies">
+<h1 data-zh="学习">Studies</h1>
+<h2 data-zh="为什么选择这所大学">Why this university</h2>
+<p data-zh="我考入华中科技大学，选择了现在的专业，因为我认为这所大学非常强。我想在一个理工科教得好的地方学习，成长为一名优秀的专业人才。">I enrolled at Huazhong University of Science and Technology and chose my major because I believe it is a very strong university. I wanted to study in a place where technical subjects are taught well and where I can grow into a good specialist.</p>
+<h2 data-zh="我怎么学习">How I study</h2>
+<p data-zh="我能很好地理解课程内容，总是努力按时交作业，争取拿到满分，从不缺课。">I understand the lessons well. I always try to hand in homework on time, get the maximum points and not skip classes.</p>
+<p data-zh="我热爱代码、逻辑、数学和信息学，喜欢学习、了解新事物、分析和测试。这就是我的兴趣所在，我希望将来成为这个领域的优秀专家。">I love code, logic, math and computer science. I love to learn, to discover new things, to analyze and to test. This is what I enjoy, and in the future I want to become a good specialist in this field.</p>
+<h2 data-zh="我学过什么">What I have studied</h2>
+<p data-zh="这个学期我学习数学分析、线性代数、物理和 C 语言。在 C 语言课上，我们做了数组和指针的实验；在物理课上，我们用交流电桥和直流电桥做了测量。">This semester I study calculus, linear algebra, physics and the C language. In C we did lab work on arrays and pointers, and in physics we made measurements with AC and DC bridges.</p>
+<h2 data-zh="比赛和活动">Competitions and events</h2>
+<p data-zh="我参加了很多不同的比赛和活动。我喜欢尝试新事物、认识新朋友，下面这些照片就是其中一些活动的记录。">I take part in many different competitions and events at the university. I like to try new things and meet new people, and these photos are from some of them.</p>
+<div class="gallery" data-pics="1,2,12"></div>
+<h2 data-zh="参观小米">Excursion to Xiaomi</h2>
+<p data-zh="11 月 22 日，我去小米公司参观了。亲眼看到一家大型科技公司很有意思，我还在那里拍了一些照片。">On November 22 I went on an excursion to Xiaomi. It was interesting to see a big technology company with my own eyes, and I took some photos there.</p>
+<div class="gallery" data-pics="17,14,11"></div>
+</section>
+
+<section class="page" id="projects">
+<h1 data-zh="项目">Projects</h1>
+<p data-zh="除了学校的项目，我还没有做过别的项目。我喜欢在 EduCoder 上解题。我刚刚开始编程之路，所以目前还没有大型项目。">Apart from school projects, I haven't made any other projects yet. I enjoy solving problems on EduCoder. I have only just started my programming path, so I don't have big projects so far.</p>
+<p data-zh="我会尽快做出属于自己的作品，并展示在这里。">I will try to make something of my own soon and show it here.</p>
+<div class="cards">
+<div class="card wide"><h3 data-zh="我的第一个项目：这个网页">My first project: this website</h3><p data-zh="一个个人日记网页，用 HTML、CSS 和 JavaScript 制作。它有三个页面、中英文切换和照片查看功能。最难的部分是让所有文字同时切换语言。">A personal diary site made with HTML, CSS and JavaScript. It has three pages, an English / 中文 switch and a photo viewer. The hardest part was making all the text change language at once.</p></div>
+<div class="card"><h3>C</h3><p data-zh="在大学做过数组和指针的实验，也在 EduCoder 上做题。">Lab work on arrays and pointers at the university, and problems on EduCoder.</p></div>
+<div class="card"><h3>JavaScript</h3><p data-zh="在这个网页里用于语言切换、菜单和照片查看。">Used in this website for the language switch, the menu and the photo viewer.</p></div>
+<div class="card"><h3>Python</h3><p data-zh="下一个要学的语言。">The next language on my list to learn.</p></div>
+</div>
+</section>
+
+<footer>GitHub: <a href="https://github.com/menli00" target="_blank" rel="noopener">menli00</a></footer>
+</div>
+<div id="box"><img alt=""></div>
+<script>
+const EXT=['.jpg','.jpeg','.png','.webp','.JPG','.JPEG','.PNG'];
+function loadImg(img){
+  let i=0;const base=img.dataset.img;
+  img.onerror=()=>{i++;if(i<EXT.length){img.src=base+EXT[i];}else{img.remove();}};
+  img.src=base+EXT[0];
+}
+function setLang(l){
+  document.documentElement.lang=l==='zh'?'zh-CN':'en';
+  document.querySelectorAll('[data-zh]').forEach(el=>{
+    if(!el.dataset.en)el.dataset.en=el.textContent;
+    el.textContent=l==='zh'?el.dataset.zh:el.dataset.en;
+  });
+  document.querySelectorAll('.lang button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.lang===l));
+  const t=document.body.dataset['title'+l.toUpperCase()];if(t)document.title=t;
+  try{localStorage.setItem('lang',l);}catch(e){}
+}
+function route(){
+  const ids=['about','studies','projects'];
+  let id=(location.hash||'#about').slice(1);if(!ids.includes(id))id='about';
+  document.querySelectorAll('.page').forEach(s=>s.hidden=s.id!==id);
+  document.querySelectorAll('.links a').forEach(a=>{if(a.getAttribute('href')==='#'+id)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
+  window.scrollTo(0,0);
+}
+window.addEventListener('hashchange',route);
+document.addEventListener('DOMContentLoaded',()=>{
+  document.querySelectorAll('[data-pics]').forEach(g=>g.dataset.pics.split(',').forEach(n=>{
+    const im=document.createElement('img');im.dataset.img='images/picture-'+n;im.alt='Photo '+n;g.appendChild(im);
+  }));
+  route();
+  document.querySelectorAll('img[data-img]').forEach(loadImg);
+  let l='en';try{l=localStorage.getItem('lang')||'en';}catch(e){}
+  setLang(l);
+  document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
+  const box=document.getElementById('box');
+  document.addEventListener('click',e=>{
+    const im=e.target.closest('.gallery img,.portrait,.with-fig img');
+    if(im){box.querySelector('img').src=im.src;box.classList.add('on');}
+    else if(box.contains(e.target))box.classList.remove('on');
+  });
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')box.classList.remove('on');});
+});
+</script>
+</body>
+</html>
