@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mengli | Welcome to My World</title>
+<title>Meñli | Welcome to My World</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lora:wght@500;600&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
 <style>
 :root{--milk:#f6edda;--cream:#fffaf0;--coffee:#4a2c1a;--line:rgba(74,44,26,.45)}
@@ -38,6 +38,8 @@ p{max-width:40em;margin:0 0 1.1em}
 .card h3{font-family:'Playfair Display','Noto Serif SC',serif;font-size:1.6rem;margin:0 0 8px}
 .card p{margin:0}
 .wide{grid-column:1/-1}
+.entry p,.card.wide p{margin:0 0 .6em}
+.card.entry h3{font-size:1.4rem}
 footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:1.05rem}
 @media(max-width:860px){.about-top,.with-fig{grid-template-columns:1fr;gap:28px}.portrait{position:static;max-width:340px}.gallery{column-count:2}.wrap{padding:28px 22px 48px}h1{font-size:2.5rem}}
 #box{position:fixed;inset:0;background:rgba(40,24,14,.85);display:none;align-items:center;justify-content:center;z-index:9;padding:24px;cursor:zoom-out}
@@ -46,10 +48,10 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-si
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 </style>
 </head>
-<body data-title-en="Mengli | Welcome to My World" data-title-zh="Mengli | 欢迎来到我的世界">
+<body data-title-en="Meñli | Welcome to My World" data-title-zh="梦丽 | 欢迎来到我的世界">
 <div class="wrap">
 <header class="top">
-<a class="brand" href="#about">Mengli</a>
+<a class="brand" href="#about" data-zh="梦丽">Meñli</a>
 <nav class="links"><a href="#about" data-zh="关于我">About Me</a><a href="#studies" data-zh="学习">Studies</a><a href="#projects" data-zh="项目">Projects</a></nav>
 <div class="lang"><button data-lang="en" aria-pressed="true">English</button><button data-lang="zh" aria-pressed="false">中文</button></div>
 </header>
@@ -58,9 +60,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-si
 <h1 data-zh="关于我">About Me</h1>
 <p class="welcome" data-zh="欢迎来到我的世界">Welcome to My World</p>
 <div class="about-top">
-<img class="portrait" data-img="images/me" alt="Mengli">
+<img class="portrait" data-img="images/me" alt="Meñli">
 <div>
-<p data-zh="你好，我是 Mengli。我来自土库曼斯坦，现在在中国武汉生活和学习。">Hi, I'm Mengli. I come from Turkmenistan, and now I live and study in Wuhan, China.</p>
+<p data-zh="你好，我是梦丽（Meñli）。我来自土库曼斯坦，现在在中国武汉生活和学习。">Hi, I'm Meñli. I come from Turkmenistan, and now I live and study in Wuhan, China.</p>
 <p data-zh="我就读于华中科技大学。我选择这所大学和这个专业，是因为我认为这所大学非常强，我想在一个认真对待理工科的地方学习。">I study at Huazhong University of Science and Technology. I chose this university and my major because I think it is a very strong university, and I wanted to learn in a place that takes technical subjects seriously.</p>
 <p data-zh="我的梦想是成为一名开发者。我喜欢代码、逻辑和数学，希望有一天能做出有用的东西。">My dream is to become a developer. I like code, logic and math, and I want to build useful things one day.</p>
 <p data-zh="我也喜欢画画和做设计，喜欢画图，也喜欢搭配颜色和字体，这个网页也是其中的一部分。我还时不时会烤一些好吃的点心。">I also love drawing and design. I like making pictures and playing with colors and fonts, and this website is part of that. From time to time I also bake something tasty.</p>
@@ -93,6 +95,28 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-si
 <p data-zh="我热爱代码、逻辑、数学和信息学，喜欢学习、了解新事物、分析和测试。这就是我的兴趣所在，我希望将来成为这个领域的优秀专家。">I love code, logic, math and computer science. I love to learn, to discover new things, to analyze and to test. This is what I enjoy, and in the future I want to become a good specialist in this field.</p>
 <h2 data-zh="我学过什么">What I have studied</h2>
 <p data-zh="这个学期我学习数学分析、线性代数、物理和 C 语言。在 C 语言课上，我们做了数组和指针的实验；在物理课上，我们用交流电桥和直流电桥做了测量。">This semester I study calculus, linear algebra, physics and the C language. In C we did lab work on arrays and pointers, and in physics we made measurements with AC and DC bridges.</p>
+<h2 data-zh="我的学习记录">My study diary</h2>
+<div class="cards">
+<div class="card entry"><h3 data-zh="1. 我的第一个 C 语言程序">1. My first C program</h3>
+<p><b data-zh="时间：">When:</b> <span data-zh="学期刚开始的时候。">At the start of the semester.</span></p>
+<p><b data-zh="学了什么：">What I learned:</b> <span data-zh="我通过 YouTube 视频学会了 C 语言的基础，并写出了第一个程序：计算器。">The basics of C from YouTube videos, and I wrote my first program, a calculator.</span></p>
+<p><b data-zh="遇到的问题：">The problem:</b> <span data-zh="第一次实验课我几乎什么都听不懂，因为我以前没学过 C 语言。后来我的计算器跑不起来，我整整一个小时都找不到原因。">In my first lab class I understood almost nothing, because I had never studied C. Later my calculator would not run, and for a whole hour I could not find the reason.</span></p>
+<p><b data-zh="怎么解决：">How I solved it:</b> <span data-zh="我回家看视频学基础。后来我发现原因是漏了一个分号，改好以后计算器就能正常运行了，我特别开心。">At home I learned the basics from videos. Then I found the reason: I had forgotten a semicolon. After I fixed it, the calculator worked, and I was really happy.</span></p>
+</div>
+<div class="card entry"><h3 data-zh="2. 数组实验（实验5）">2. Arrays lab (实验5)</h3>
+<p><b data-zh="时间：">When:</b> <span data-zh="学期的后面一段时间。">Later in the semester.</span></p>
+<p><b data-zh="学了什么：">What I learned:</b> <span data-zh="怎么在 C 语言里使用数组。">How to work with arrays in C.</span></p>
+<p><b data-zh="遇到的问题：">The problem:</b> <span data-zh="我的一些程序里有错误。">Some of my programs had errors.</span></p>
+<p><b data-zh="怎么解决：">How I solved it:</b> <span data-zh="我检查了代码，找到错误的地方并改正。然后我写了实验报告，说明每处是怎么改的，并附上正确的代码。">I went through the code, found where the mistakes were and corrected them. Then I wrote a lab report that explains each fix and shows the correct code.</span></p>
+</div>
+<div class="card entry"><h3 data-zh="3. 指针实验（实验6）">3. Pointers lab (实验6)</h3>
+<p><b data-zh="时间：">When:</b> <span data-zh="学期的后面一段时间。">Later in the semester.</span></p>
+<p><b data-zh="学了什么：">What I learned:</b> <span data-zh="指针在 C 语言里是怎么用的。我做了九个程序，并在 VS Code 里运行。">How pointers work in C. I worked on nine programs and ran them in VS Code.</span></p>
+<p><b data-zh="遇到的问题：">The problem:</b> <span data-zh="有些程序需要先改正，才能得到正确的结果。">Some programs needed corrections before they gave the right output.</span></p>
+<p><b data-zh="怎么解决：">How I solved it:</b> <span data-zh="我改正了代码，并写了一份报告，里面有每个正确的程序，还有对我改动的简单说明。">I fixed the code and wrote a report with every correct program and a simple explanation of what I changed.</span></p>
+</div>
+</div>
+<p data-zh="从那以后，我都是自己完成代码题，在 EduCoder 和实验课上都是这样。">Since then I do all my coding tasks on my own, on EduCoder and in lab classes.</p>
 <h2 data-zh="比赛和活动">Competitions and events</h2>
 <p data-zh="我参加了很多不同的比赛和活动。我喜欢尝试新事物、认识新朋友，下面这些照片就是其中一些活动的记录。">I take part in many different competitions and events at the university. I like to try new things and meet new people, and these photos are from some of them.</p>
 <div class="gallery" data-pics="1,2,12"></div>
@@ -106,8 +130,9 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-si
 <p data-zh="除了学校的项目，我还没有做过别的项目。我喜欢在 EduCoder 上解题。我刚刚开始编程之路，所以目前还没有大型项目。">Apart from school projects, I haven't made any other projects yet. I enjoy solving problems on EduCoder. I have only just started my programming path, so I don't have big projects so far.</p>
 <p data-zh="我会尽快做出属于自己的作品，并展示在这里。">I will try to make something of my own soon and show it here.</p>
 <div class="cards">
-<div class="card wide"><h3 data-zh="我的第一个项目：这个网页">My first project: this website</h3><p data-zh="一个个人日记网页，用 HTML、CSS 和 JavaScript 制作。它有三个页面、中英文切换和照片查看功能。最难的部分是让所有文字同时切换语言。">A personal diary site made with HTML, CSS and JavaScript. It has three pages, an English / 中文 switch and a photo viewer. The hardest part was making all the text change language at once.</p></div>
-<div class="card"><h3>C</h3><p data-zh="在大学做过数组和指针的实验，也在 EduCoder 上做题。">Lab work on arrays and pointers at the university, and problems on EduCoder.</p></div>
+<div class="card wide"><h3 data-zh="C 语言计算器">Calculator in C</h3><p><b data-zh="要解决的问题：">The problem:</b> <span data-zh="做一个简单的计算器程序。">A program that works as a simple calculator.</span></p><p><b data-zh="我负责的部分：">My part:</b> <span data-zh="我自己写的，是在看视频学会 C 语言基础以后写的。">I wrote it myself, after learning the basics of C from videos.</span></p><p><b data-zh="用到的技术：">Technology:</b> <span data-zh="C 语言。">The C language.</span></p><p><b data-zh="最大的困难：">The hardest part:</b> <span data-zh="程序跑不起来，我花了一个小时才找到原因：漏了一个分号。">The program would not run, and it took me an hour to find the reason: a forgotten semicolon.</span></p></div>
+<div class="card wide"><h3 data-zh="这个网页">This website</h3><p><b data-zh="要解决的问题：">The problem:</b> <span data-zh="我需要一个地方，放我的学习记录、照片和项目，并且有英文和中文两个版本。">I needed one place for my study diary, my photos and my projects, in English and Chinese.</span></p><p><b data-zh="我负责的部分：">My part:</b> <span data-zh="我确定了设计和文字，选了照片，并自己把网页发布到 GitHub Pages。代码是在 AI 助手的帮助下写的，我正在学习它是怎么运行的。">I chose the design and the texts, picked my photos, and published the site on GitHub Pages myself. The code was written with the help of an AI assistant, and I am learning how it works.</span></p><p><b data-zh="用到的技术：">Technology:</b> <span data-zh="HTML、CSS、JavaScript、Git 和 GitHub Pages。">HTML, CSS, JavaScript, Git and GitHub Pages.</span></p><p><b data-zh="最大的困难：">The hardest part:</b> <span data-zh="第一次使用 GitHub：创建仓库、上传文件并开启 GitHub Pages。">Learning to use GitHub for the first time: creating the repository, uploading the files and turning on GitHub Pages.</span></p></div>
+<div class="card"><h3>C</h3><p data-zh="我写的第一个程序是计算器。在大学做过数组和指针的实验，也在 EduCoder 上做题。">My first program was a calculator. Lab work on arrays and pointers at the university, and problems on EduCoder.</p></div>
 <div class="card"><h3>JavaScript</h3><p data-zh="在这个网页里用于语言切换、菜单和照片查看。">Used in this website for the language switch, the menu and the photo viewer.</p></div>
 <div class="card"><h3>Python</h3><p data-zh="下一个要学的语言。">The next language on my list to learn.</p></div>
 </div>
